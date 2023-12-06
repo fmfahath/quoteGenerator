@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;700;900&family=Source+Code+Pro:ital,wght@0,200;0,300;1,200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
 body{
@@ -20,3 +23,49 @@ body{
     text-align: center;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
 }
+
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40PX;
+    position: relative;
+}
+
+.quote-box h2::after{
+    content: "";
+    width: 75px;
+    height: 3px;
+    background-color: rgb(23,124,229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+    display: block;
+    float: right;
+    position: relative;
+
+}
+
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color:rgb(23,124,229);
+    position: absolute;
+    /* bottom: 7px; */
+    /* right: 80px; */
+    top: 50%;
+    left: -30px;
+}
+ 
