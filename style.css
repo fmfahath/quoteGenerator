@@ -59,14 +59,14 @@ body{
 
 .quote-box span::before{
     content: '';
-    width: 20px;
+    width: 15px;
     height: 2px;
     background-color:rgb(23,124,229);
     position: absolute;
     /* bottom: 7px; */
     /* right: 80px; */
-    top: 50%;
-    left: -30px;
+    top: 55%;
+    left: -25px;
 }
 
 .quote-box div{
